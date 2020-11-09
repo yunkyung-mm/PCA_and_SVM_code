@@ -36,7 +36,6 @@ for i=1:n;
  Q(i,j)=y(i,1)*y(j,1)*(x(i,:)*x(j,:)');
  end
 end
-34
 fun = @(a1) a1'*Q*a1./2-ones(1,n)*a1;
 a0=ones(n,1);
 y1=[y';-y'; -eye(n)];
